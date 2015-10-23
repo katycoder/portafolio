@@ -1,0 +1,83 @@
+nav {
+    font-family: "Pacifico";
+    font-size: 20px;
+    background-color: #1E899C !important;
+}
+.navbar-default .navbar-brand{
+  font-size: 2em;
+  font-family: "Pacifico";
+}
+.opacyti{
+  background: linear-gradient(to bottom right, #000000, rgb(12, 12, 12));
+  opacity: .8;
+  height: 620px;
+  padding-top: 15%;
+  margin-top: -1.6%;
+  background-attachment: fixed;
+}
+header{
+  background-image: url("../images/portfolio/nieve.jpg");
+  width: 100%;
+  background-size: cover;
+  height: 620px;
+  background-attachment: fixed;
+}
+.baner{
+    text-align: center;
+    color: white;
+}
+.title{
+  font-family: pacifico;
+  font-size: 6em;
+  color: aliceblue;
+  text-align: center;
+  position: relative;
+  
+}
+.boton{
+  background: black;
+  color: white;
+  display: inline-block;
+  padding: 1%;
+  margin: 2%;
+  border:1px solid white;
+}
+.boton:hover{
+  background: gray;
+  color:#0dc0c0;
+}
+.perile{
+  width: 40%;
+  margin-left: -4%;
+
+}
+.my{
+  width: 100%;
+  height: 585px;
+  background-color:blue;
+}
+
+
+.item-inner {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 5%;
+    margin: 0%;
+    position: relative;
+}
+.portfolio-item h5 {
+  background: #fff;
+  margin: 0;
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 12px;
+  color: #2c3e50;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.latest-project{
+    padding: 7% 0% 8%;
+    background-color: #f8f8f8;
+}
