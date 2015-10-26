@@ -1,11 +1,16 @@
 nav {
     font-family: "Pacifico";
     font-size: 20px;
-    background-color: #1E899C !important;
+    background-color: black !important;
+    color:white !important;
+    padding-top: 2%;
+    border:none;
 }
 .navbar-default .navbar-brand{
   font-size: 2em;
   font-family: "Pacifico";
+  height:80px;
+  color: white !important;
 }
 .opacyti{
   background: linear-gradient(to bottom right, #000000, rgb(12, 12, 12));
@@ -34,30 +39,38 @@ header{
   position: relative;
   
 }
-.boton{
-  background: black;
-  color: white;
-  display: inline-block;
-  padding: 1%;
-  margin: 2%;
-  border:1px solid white;
-}
-.boton:hover{
-  background: gray;
-  color:#0dc0c0;
-}
 .perile{
-  width: 40%;
-  margin-left: -4%;
-
+  width: 100%;
+  height: 650px;
+  margin-left: -8%;
 }
 .my{
   width: 100%;
-  height: 585px;
-  background-color:blue;
+  height: 650px;
+  background-color:#AFB0B1;
+  color:gray;
+  font-family: arial;
+  text-align: center;
+}
+.my h2,p{
+  font-size: 1.5em;
+  margin-top: 10%
 }
 
-
+.lenguajes{
+  width: 70%;
+  height: 200px;
+  margin-left: 15%;
+  text-align: center;
+  background-size: cover center;
+  margin: 15%;
+}
+.progress-bar{
+  background-color: #233748 !important;
+}
+.lenguaje{
+  background-color: gray;
+}
 .item-inner {
     background: #fff;
     border: 1px solid #eee;
@@ -80,4 +93,142 @@ header{
 .latest-project{
     padding: 7% 0% 8%;
     background-color: #f8f8f8;
+}
+.btn-danger{
+  background-color: black;
+}
+
+.black-imagen2{
+  background: linear-gradient(to bottom right,black, rgb(12, 12, 12));
+    opacity: .8;
+    height: 500px;  
+}
+.imagen2{
+  background-image: url("../images/portfolio/contactus.jpg");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+}
+.formulario{
+  width: 500px;
+    margin-left: 100px
+}
+input, textarea {
+  width:305px;
+  height:50px;
+  padding:10px;
+  padding-top:10px;
+  padding-left: 40px;
+  margin-top:10px;
+  font-size:15px;
+  background-color: #353535;
+  border:none;
+}
+textarea {
+  height:120px;
+  border:none;
+  background-color: #353535;
+}
+
+#submit{
+  width: 305px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px; 
+    text-align: center;
+    background: #0dc0c0;
+    color: white;
+}
+
+
+
+/* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background: black;
+}
+
+.gallery-cell {
+  width: 70%;
+  height: 200px;
+  /* flex-box, center image in cell */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.gallery-cell img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected image */
+.gallery-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
+}
+
+@media screen and ( min-width: 768px ) {
+  .gallery-cell {
+    height: 400px;
+  }
+}
+
+@media screen and ( min-width: 960px ) {
+  .gallery-cell {
+    width: 60%;
+  }
+}
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+  opacity: 1;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* closer to edge */
+.flickity-prev-next-button.previous { left: 0; }
+.flickity-prev-next-button.next { right: 0; }
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
 }
